@@ -1,7 +1,3 @@
-<h3 align="center">
-  Opteo home programming exercise
-</h3>
-
 <br/>
 
 <p align="center">
