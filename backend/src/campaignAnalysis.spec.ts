@@ -122,6 +122,21 @@ describe('formatChartClicksLabels', () => {
         ])
         expect(formattedChartClicksLabels.length - 1).toEqual(90)
     })
+
+    it('should not error on a single entry', () => {
+        const d = [
+            {
+                campaign: {
+                    resource_name: 'customers/3827277046/campaigns/9531537070',
+                    name: '[21] RM_GDN_WD_EN - Remarketing - Website',
+                    id: 9531537070,
+                },
+                metrics: { clicks: 2, all_conversions: 2.5, conversions: 2.5, all_conversions_value: 21.32, cost: 4 },
+                segments: { date: '2021-09-04' },
+            }]
+        const f = formatChartClicksLabels(d)
+        expect(f).toEqual(['2021-09-04'])
+    })
 })
 
 describe('getDateWithHighestClicks', () => {
