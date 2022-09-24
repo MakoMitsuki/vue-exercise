@@ -81,11 +81,6 @@ Again, one of the aims is to get the 7 tests passing
 ```
 yarn test
 ```
-
-## Submission
-
-Ideally submission would be through a private repo and inviting https://github.com/Joel-Valentine join that repo. If this isn't possible feel free to send the project as a zip to joel@opteo.com  
-
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
